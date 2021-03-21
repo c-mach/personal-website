@@ -1,4 +1,7 @@
+@import 'setup';
+@import 'variables';
+
 body {
-    background: ghostwhite;
-    color: goldenrod;
+    background: $lightGrey;
+    color: $gold;
 }
