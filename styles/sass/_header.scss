@@ -1,12 +1,6 @@
 header {
-    // nav {
-    //     display: flex;
-    //     flex-direction: column;
-    //     justify-content: flex-end;
-    //     align-items: center;
-    //     position: sticky;
-    //     background-color: transparent;
-    // }
+    height: 100vh;
+    background-color: $offBlack;
 
     .menu-btn {
         z-index: 10;
@@ -20,7 +14,6 @@ header {
         height: 80px;
         cursor: pointer;
         transition: all 0.5s ease-in-out;
-        border: 3px solid pink;
 
         &.open .menu-toggle {
             transform: translateX(-50px);
@@ -66,7 +59,8 @@ header {
         position: fixed;
         top: 0;
         right: 0;
-        background-color: black;
+        background-color: $offBlack;
+        opacity: 1;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -85,8 +79,21 @@ header {
             text-align: center;
             
         }
-
     }
 
+    .name-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
+        h1 {
+            color: white;
+            border-bottom: $gold 4px solid;
+        }
+
+        h2 {
+            color: white;
+        }
+    }
 }

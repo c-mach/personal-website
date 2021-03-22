@@ -263,6 +263,11 @@ h2 {
   font-size: 2rem;
 }
 
+header {
+  height: 100vh;
+  background-color: #111111;
+}
+
 header .menu-btn {
   z-index: 10;
   position: fixed;
@@ -282,7 +287,6 @@ header .menu-btn {
   cursor: pointer;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  border: 3px solid pink;
 }
 
 header .menu-btn.open .menu-toggle {
@@ -336,7 +340,8 @@ header .nav-container {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: black;
+  background-color: #111111;
+  opacity: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -367,6 +372,31 @@ header .nav-container.active {
 header .nav-container li {
   outline: 1px solid green;
   text-align: center;
+}
+
+header .name-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .name-container h1 {
+  color: white;
+  border-bottom: #b37f3f 4px solid;
+}
+
+header .name-container h2 {
+  color: white;
 }
 
 .name-container {
