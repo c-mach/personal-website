@@ -247,6 +247,19 @@ a {
   text-decoration: none;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+}
+
+button:focus, button:active {
+  outline: 1px solid #b37f3f;
+}
+
+a {
+  color: white;
+}
+
 html {
   font-size: 62.5%;
 }

@@ -18,3 +18,17 @@ li,
 a {
     text-decoration: none;
 }
+
+button {
+    background-color: transparent;
+    border: none;
+
+    &:focus,
+    &:active {
+        outline: 1px solid $gold;
+    }
+}
+
+a {
+    color: white;
+}   
