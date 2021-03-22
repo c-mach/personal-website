@@ -5,26 +5,3 @@
 @import 'general';
 @import 'header';
 
-
-
-
-.name-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-}
-
-.text-type > .text {
-    border-right: 0.1rem solid $lightGrey;
-    animation: blinkTextCursor 1100ms steps(40) infinite normal;
-}
-
-@keyframes blinkTextCursor {
-    from {
-        border-right-color: $lightGrey;
-    }
-    to {
-        border-right-color: transparent;
-    }
-}
