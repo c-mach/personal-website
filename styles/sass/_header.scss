@@ -14,6 +14,7 @@ header {
         height: 80px;
         cursor: pointer;
         transition: all 0.5s ease-in-out;
+        overflow: hidden;
 
         &.open .menu-toggle {
             transform: translateX(-50px);
@@ -26,6 +27,11 @@ header {
 
         &.open .menu-toggle::after {
             transform: rotate(-45deg) translate(35px, 35px);
+        }
+
+        &:focus,
+        &:active {
+            outline: 1px solid $gold;
         }
     }
     .menu-toggle {
@@ -94,6 +100,12 @@ header {
 
         h2 {
             color: white;
+        }
+
+        .down-arrow {
+            position: absolute;
+            bottom: 0;
+            padding-bottom: 30px;
         }
     }
 }
