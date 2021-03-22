@@ -45,21 +45,35 @@ img {
     max-width: 100%;
 }
 
-button {
-    background-color: transparent;
-    border: none;
+// button {
+//     background-color: transparent;
+//     border: none;
 
-    &:focus {
-        outline: 1px solid $gold;
-    }
-}
+//     &:focus {
+//         outline: 1px solid $gold;
+//     }
+// }
 
 a {
-    color: white;
-        &:hover {
-            color: $gold;
-        }
-}   
+    color: $gold;
+
+    &:hover {
+        color: white;
+    }
+}  
+
+a.button {
+    padding: 5px 20px;
+    width: fit-content;
+    align-self: center;
+    border: 2px solid $gold;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+        background-color: $gold;
+    }
+}
 
 h1, 
 h2,
@@ -99,6 +113,3 @@ h3 {
 
     }
 }
-
-
- 

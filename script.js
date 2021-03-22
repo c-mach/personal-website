@@ -70,6 +70,7 @@ myApp.typingText = function () {
 myApp.init = function () {
     myApp.typingText();
     myApp.toggleMenu();
+    AOS.init();
 }
 
 myApp.init();

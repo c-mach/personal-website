@@ -284,21 +284,28 @@ img {
   max-width: 100%;
 }
 
-button {
-  background-color: transparent;
-  border: none;
-}
-
-button:focus {
-  outline: 1px solid #DD7907;
-}
-
 a {
-  color: white;
+  color: #DD7907;
 }
 
 a:hover {
-  color: #DD7907;
+  color: white;
+}
+
+a.button {
+  padding: 5px 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: 2px solid #DD7907;
+  text-transform: uppercase;
+}
+
+a.button:hover, a.button:focus {
+  background-color: #DD7907;
 }
 
 h1,
@@ -571,6 +578,15 @@ header .nav-container li:nth-child(1)::after, header .nav-container li:nth-child
   border-bottom: 2px solid #DD7907;
 }
 
+header .nav-container li a {
+  color: white;
+  border: none;
+}
+
+header .nav-container li a:hover {
+  color: #DD7907;
+}
+
 header .name-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -641,6 +657,8 @@ header .down-arrow a {
   text-align: center;
   line-height: 1.4;
   margin: 0 auto;
+  color: white;
+  border: none;
 }
 
 header .down-arrow a:hover, header .down-arrow a:focus {
@@ -663,7 +681,6 @@ header .down-arrow a:hover, header .down-arrow a:focus {
   min-width: 300px;
   width: calc(40% - 15px);
   margin-right: 15px;
-  outline: 1px solid pink;
 }
 
 .about-container .about-text {
@@ -675,7 +692,6 @@ header .down-arrow a:hover, header .down-arrow a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  outline: 1px solid green;
 }
 
 .about-container .about-text p {
