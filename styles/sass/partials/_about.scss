@@ -1,0 +1,28 @@
+.about {
+    height: 40vh;
+}
+
+.about-container {
+    margin: 10% 0;
+    display: flex;
+
+    .about-image {
+        min-width: 300px;
+        width: calc(40% - 15px);
+        margin-right: 15px;
+    }
+
+    .about-text {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+
+        p {
+            padding: 5%;
+
+            &:nth-child(3) {
+                padding: 0 5%;
+            }
+        }
+    }
+}

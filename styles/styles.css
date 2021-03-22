@@ -254,12 +254,27 @@ html {
 
 body {
   font-family: "Karla", sans-serif;
-  font-size: 1.6rem;
   color: #393d3f;
 }
 
+body {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 30rem) {
+  body {
+    font-size: calc(1.6rem + 0.4 * ((100vw - 30rem) / 130));
+  }
+}
+
+@media screen and (min-width: 160rem) {
+  body {
+    font-size: 2rem;
+  }
+}
+
 .wrapper {
-  width: 80%;
+  width: 75%;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -328,6 +343,19 @@ h2 {
 }
 
 h3 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: #393d3f;
+}
+
+h3 {
   font-size: 3rem;
 }
 
@@ -341,6 +369,18 @@ h3 {
   h3 {
     font-size: 4.5rem;
   }
+}
+
+h3::after {
+  content: '';
+  border-bottom: #DD7907 3px solid;
+  width: 80px;
+  height: 6px;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -5px;
+  left: 50%;
 }
 
 header {
@@ -606,4 +646,40 @@ header .down-arrow a {
 header .down-arrow a:hover, header .down-arrow a:focus {
   outline: 1px solid #DD7907;
   color: #DD7907;
+}
+
+.about {
+  height: 40vh;
+}
+
+.about-container {
+  margin: 10% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-container .about-image {
+  min-width: 300px;
+  width: calc(40% - 15px);
+  margin-right: 15px;
+}
+
+.about-container .about-text {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about-container .about-text p {
+  padding: 5%;
+}
+
+.about-container .about-text p:nth-child(3) {
+  padding: 0 5%;
 }
