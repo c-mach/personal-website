@@ -1,13 +1,14 @@
-@import 'setup';
 @import 'variables';
+@import 'setup';
+@import 'mixins';
+@import 'strip-styles';
+@import 'general';
+@import 'header';
 
-body {
-    background: rgb(34, 34, 34);
-    color: $gold;
-    height: 100vh;
-}
 
-.header-container {
+
+
+.name-container {
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -4,32 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Carman Mach</title>
 </head>
 <body>
+    <!-- header starts -->
     <header>
         <div class="menu-btn">
-            <div class="menu-btn-burger"></div>
-            <div class="nav-menu">
-                <nav>
-                    <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <div class="menu-toggle" aria-label="Menu" tabindex="0" role="button" aria-controls="navigation"></div>
         </div>
-        <div class="header-container">
+        <div class="nav-container">
+            <nav class="overlay">
+                <ul>
+                    <li tabindex="0"><a href="#about">About</a></li>
+                    <li tabindex="0"><a href="#projects">Projects</a></li>
+                    <li tabindex="0"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- end of nav -->
+        <div class="name-container">
             <h1>Carman Mach</h1>
             <h2>
-                <span class="text-type" data-wait="3000" data-words='["Frontend Developer", "Creator", "Former Chef"]'></span>
+                <span class="text-type" data-wait="3000" data-words='["Front-End Developer", "Creator", "Former Chef"]'></span>
             </h2>
         </div>
+        <div class="down-arrow">
+            <button>
+                <a href="#about">down</a>
+            </button>
+        </div>
+    </header> <!--./header-->
 
-
-    </header>
     <script src="./script.js"></script>
 </body>
 </html>
