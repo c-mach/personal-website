@@ -476,8 +476,7 @@ header .name-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 95%;
-  outline: 1px solid pink;
+  height: 92%;
 }
 
 header .name-container h1 {
@@ -520,4 +519,18 @@ header .down-arrow {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+header .down-arrow a {
+  font-size: 3rem;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 1.4;
+  margin: 0 auto;
+}
+
+header .down-arrow a:hover, header .down-arrow a:focus {
+  outline: 1px solid #D28C36;
+  color: #D28C36;
 }

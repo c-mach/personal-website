@@ -125,9 +125,7 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 95%;
-
-        outline: 1px solid pink;
+        height: 92%;
 
         h1 {
             color: white;
@@ -155,5 +153,20 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
+
+        a {
+            font-size: 3rem;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 1.4;
+            margin: 0 auto;
+
+            &:hover,
+            &:focus {
+                outline: 1px solid $gold;
+                color: $gold;
+            }
+        }   
     }
 }
