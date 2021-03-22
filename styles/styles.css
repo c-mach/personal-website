@@ -231,6 +231,7 @@ li,
 ul,
 h1,
 h2,
+h3,
 p,
 a,
 button {
@@ -245,11 +246,6 @@ ul {
 li,
 a {
   text-decoration: none;
-}
-
-button {
-  background-color: transparent;
-  border: none;
 }
 
 html {
@@ -273,6 +269,11 @@ img {
   max-width: 100%;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+}
+
 button:focus {
   outline: 1px solid #DD7907;
 }
@@ -286,7 +287,8 @@ a:hover {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: "Montserrat", sans-serif;
   color: #DD7907;
   text-transform: uppercase;
@@ -294,11 +296,51 @@ h2 {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
+}
+
+@media screen and (min-width: 30rem) {
+  h1 {
+    font-size: calc(4rem + 2 * ((100vw - 30rem) / 130));
+  }
+}
+
+@media screen and (min-width: 160rem) {
+  h1 {
+    font-size: 6rem;
+  }
 }
 
 h2 {
   font-size: 3rem;
+}
+
+@media screen and (min-width: 30rem) {
+  h2 {
+    font-size: calc(3rem + 1.5 * ((100vw - 30rem) / 130));
+  }
+}
+
+@media screen and (min-width: 160rem) {
+  h2 {
+    font-size: 4.5rem;
+  }
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 30rem) {
+  h3 {
+    font-size: calc(3rem + 1.5 * ((100vw - 30rem) / 130));
+  }
+}
+
+@media screen and (min-width: 160rem) {
+  h3 {
+    font-size: 4.5rem;
+  }
 }
 
 header {
@@ -447,7 +489,6 @@ header .nav-container ul {
 
 header .nav-container li {
   font-family: "Montserrat", sans-serif;
-  font-size: 3rem;
   position: relative;
   width: 100%;
   height: 100%;
@@ -460,6 +501,22 @@ header .nav-container li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+header .nav-container li {
+  font-size: 2.8rem;
+}
+
+@media screen and (min-width: 30rem) {
+  header .nav-container li {
+    font-size: calc(2.8rem + 0.2 * ((100vw - 30rem) / 130));
+  }
+}
+
+@media screen and (min-width: 160rem) {
+  header .nav-container li {
+    font-size: 3rem;
+  }
 }
 
 header .nav-container li:nth-child(1)::after, header .nav-container li:nth-child(2)::after, header .nav-container li:nth-child(3)::after {
