@@ -663,6 +663,7 @@ header .down-arrow a:hover, header .down-arrow a:focus {
   min-width: 300px;
   width: calc(40% - 15px);
   margin-right: 15px;
+  outline: 1px solid pink;
 }
 
 .about-container .about-text {
@@ -674,6 +675,7 @@ header .down-arrow a:hover, header .down-arrow a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  outline: 1px solid green;
 }
 
 .about-container .about-text p {
