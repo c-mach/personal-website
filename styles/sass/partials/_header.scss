@@ -127,8 +127,12 @@ header {
         align-items: center;
         height: 92%;
 
-        h1 {
+        h1,
+        h2 {
             color: white;
+        }
+
+        h1 {
             border-bottom: $gold 6px solid;
             margin-bottom: 20px;
         }

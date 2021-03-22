@@ -1,7 +1,6 @@
-@import 'variables';
-@import 'setup';
-@import 'mixins';
-@import 'strip-styles';
-@import 'general';
-@import 'header';
+@import './partials/variables';
+@import './partials/setup';
+@import './partials/mixins';
+@import './partials/general';
+@import './partials/header';
 

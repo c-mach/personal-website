@@ -259,10 +259,22 @@ html {
 body {
   font-family: "Karla", sans-serif;
   font-size: 1.6rem;
+  color: #393d3f;
+}
+
+.wrapper {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 button:focus {
-  outline: 1px solid #D28C36;
+  outline: 1px solid #DD7907;
 }
 
 a {
@@ -270,13 +282,13 @@ a {
 }
 
 a:hover {
-  color: #D28C36;
+  color: #DD7907;
 }
 
 h1,
 h2 {
   font-family: "Montserrat", sans-serif;
-  color: white;
+  color: #DD7907;
   text-transform: uppercase;
   font-weight: 400;
 }
@@ -333,13 +345,13 @@ header .menu-btn.open .menu-toggle::after {
 }
 
 header .menu-btn:focus {
-  outline: 1px solid #D28C36;
+  outline: 1px solid #DD7907;
 }
 
 header .menu-toggle {
   width: 50px;
   height: 6px;
-  background: #D28C36;
+  background: #DD7907;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -350,7 +362,7 @@ header .menu-toggle::after {
   position: absolute;
   width: 50px;
   height: 6px;
-  background: #D28C36;
+  background: #DD7907;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -459,7 +471,7 @@ header .nav-container li:nth-child(1)::after, header .nav-container li:nth-child
           transform: translateX(-50%);
   width: 50px;
   height: 3px;
-  border-bottom: 2px solid #D28C36;
+  border-bottom: 2px solid #DD7907;
 }
 
 header .name-container {
@@ -479,9 +491,13 @@ header .name-container {
   height: 92%;
 }
 
-header .name-container h1 {
+header .name-container h1,
+header .name-container h2 {
   color: white;
-  border-bottom: #D28C36 6px solid;
+}
+
+header .name-container h1 {
+  border-bottom: #DD7907 6px solid;
   margin-bottom: 20px;
 }
 
@@ -493,7 +509,7 @@ header .name-container .text-type > .text {
 
 @-webkit-keyframes blinkTextCursor {
   from {
-    border-right-color: #D28C36;
+    border-right-color: #DD7907;
   }
   to {
     border-right-color: transparent;
@@ -502,7 +518,7 @@ header .name-container .text-type > .text {
 
 @keyframes blinkTextCursor {
   from {
-    border-right-color: #D28C36;
+    border-right-color: #DD7907;
   }
   to {
     border-right-color: transparent;
@@ -531,6 +547,6 @@ header .down-arrow a {
 }
 
 header .down-arrow a:hover, header .down-arrow a:focus {
-  outline: 1px solid #D28C36;
-  color: #D28C36;
+  outline: 1px solid #DD7907;
+  color: #DD7907;
 }

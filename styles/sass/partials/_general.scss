@@ -1,0 +1,77 @@
+// stripping styles
+
+body,
+li,
+ul,
+h1, 
+h2, 
+p,
+a,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li,
+a {
+    text-decoration: none;
+}
+
+// general styles
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $bodyFont;
+    font-size: 1.6rem;
+    color: $textBlack;
+}
+
+.wrapper {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+
+    &:focus {
+        outline: 1px solid $gold;
+    }
+}
+
+a {
+    color: white;
+        &:hover {
+            color: $gold;
+        }
+}   
+
+h1, 
+h2 {
+    font-family: $titleFont;
+    color: $gold;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
