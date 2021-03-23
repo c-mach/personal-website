@@ -711,7 +711,7 @@ header .down-arrow a:hover, header .down-arrow a:focus {
   border-radius: 4px;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
-  padding: 2%;
+  padding: 4% 8%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -719,11 +719,61 @@ header .down-arrow a:hover, header .down-arrow a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  outline: solid 1px blue;
 }
 
 .skills-container h3 {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  outline: red 1px solid;
+  margin-bottom: 20px;
+}
+
+.skills-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  outline: 1px solid green;
+}
+
+.skills-icons li {
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  outline: 1px solid red;
+}
+
+.skills-icons li:hover {
+  color: #DD7907;
+}
+
+.skills-icons li i {
+  padding: 1%;
+}
+
+.skills-icons li i {
+  font-size: 6rem;
+}
+
+@media screen and (min-width: 30rem) {
+  .skills-icons li i {
+    font-size: calc(6rem + 1 * ((100vw - 30rem) / 130));
+  }
+}
+
+@media screen and (min-width: 160rem) {
+  .skills-icons li i {
+    font-size: 7rem;
+  }
+}
+
+.skills-icons li p {
+  font-weight: 800;
+  text-transform: uppercase;
 }
