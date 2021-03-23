@@ -11,8 +11,6 @@
     display: flex;
     flex-direction: column;
 
-    outline: solid 1px blue;
-
     h3 {
         align-self: center;
         margin-bottom: 20px;
@@ -23,27 +21,39 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    outline: 1px solid green;
 
     li {
         text-align: center;
-        width: fit-content;
-        outline: 1px solid red;
+        width: 130px;
+        height: 100px;
+        margin: 1.5%;
         
         &:hover {
             color: $gold;
         }
         
         i {
-            @include fluid-type-font(6rem, 7rem);
-            padding: 1%;
+            @include fluid-type-font(5rem, 6rem);
+            padding: 3% 0;
+        }
+
+        .fas {
+            @include fluid-type-font(4.2rem, 5.2rem);
         }
 
         p {
             font-weight: 800;
+            @include fluid-type-font(1.4rem, 1.6rem);
             text-transform: uppercase;
         }
     }
-
+    
+    li:nth-of-type(15) {
+        i {
+            @include fluid-type-font(3rem, 3.5rem);
+        }
+        
+    }
 }
+
 

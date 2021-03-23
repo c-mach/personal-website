@@ -719,7 +719,6 @@ header .down-arrow a:hover, header .down-arrow a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  outline: solid 1px blue;
 }
 
 .skills-container h3 {
@@ -738,15 +737,13 @@ header .down-arrow a:hover, header .down-arrow a:focus {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  outline: 1px solid green;
 }
 
 .skills-icons li {
   text-align: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  outline: 1px solid red;
+  width: 130px;
+  height: 100px;
+  margin: 1.5%;
 }
 
 .skills-icons li:hover {
@@ -754,26 +751,74 @@ header .down-arrow a:hover, header .down-arrow a:focus {
 }
 
 .skills-icons li i {
-  padding: 1%;
+  padding: 3% 0;
 }
 
 .skills-icons li i {
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 @media screen and (min-width: 30rem) {
   .skills-icons li i {
-    font-size: calc(6rem + 1 * ((100vw - 30rem) / 130));
+    font-size: calc(5rem + 1 * ((100vw - 30rem) / 130));
   }
 }
 
 @media screen and (min-width: 160rem) {
   .skills-icons li i {
-    font-size: 7rem;
+    font-size: 6rem;
+  }
+}
+
+.skills-icons li .fas {
+  font-size: 4.2rem;
+}
+
+@media screen and (min-width: 30rem) {
+  .skills-icons li .fas {
+    font-size: calc(4.2rem + 1 * ((100vw - 30rem) / 130));
+  }
+}
+
+@media screen and (min-width: 160rem) {
+  .skills-icons li .fas {
+    font-size: 5.2rem;
   }
 }
 
 .skills-icons li p {
   font-weight: 800;
   text-transform: uppercase;
+}
+
+.skills-icons li p {
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 30rem) {
+  .skills-icons li p {
+    font-size: calc(1.4rem + 0.2 * ((100vw - 30rem) / 130));
+  }
+}
+
+@media screen and (min-width: 160rem) {
+  .skills-icons li p {
+    font-size: 1.6rem;
+  }
+}
+
+.skills-icons li:nth-of-type(15) i {
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 30rem) {
+  .skills-icons li:nth-of-type(15) i {
+    font-size: calc(3rem + 0.5 * ((100vw - 30rem) / 130));
+  }
+}
+
+@media screen and (min-width: 160rem) {
+  .skills-icons li:nth-of-type(15) i {
+    font-size: 3.5rem;
+  }
 }
