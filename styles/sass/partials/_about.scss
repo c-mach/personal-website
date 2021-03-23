@@ -26,16 +26,16 @@
         }
     }
 
-    // a {
-    //     padding: 5px 20px;
-    //     width: fit-content;
-    //     align-self: center;
-    //     border: 2px solid $gold;
-    //     text-transform: uppercase;
+    a.button {
+    padding: 5px 20px;
+    width: fit-content;
+    align-self: center;
+    border: 2px solid $gold;
+    text-transform: uppercase;
 
-    //     &:hover,
-    //     &:focus {
-    //         background-color: $gold;
-    //     }
-    // }
+        &:hover,
+        &:focus {
+            background-color: $gold;
+        }
+    }
 }

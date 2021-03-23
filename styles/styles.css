@@ -292,22 +292,6 @@ a:hover {
   color: white;
 }
 
-a.button {
-  padding: 5px 20px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  border: 2px solid #DD7907;
-  text-transform: uppercase;
-}
-
-a.button:hover, a.button:focus {
-  background-color: #DD7907;
-}
-
 h1,
 h2,
 h3 {
@@ -700,4 +684,20 @@ header .down-arrow a:hover, header .down-arrow a:focus {
 
 .about-container .about-text p:nth-child(3) {
   padding: 0 5%;
+}
+
+.about-container a.button {
+  padding: 5px 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: 2px solid #DD7907;
+  text-transform: uppercase;
+}
+
+.about-container a.button:hover, .about-container a.button:focus {
+  background-color: #DD7907;
 }
