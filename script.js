@@ -7,11 +7,19 @@ myApp.toggleMenu = function () {
     menuBtn.addEventListener('click', () => {
         if (!menuOpen) {
             menuBtn.classList.add('open');
-            navMenu.classList.add('active')
+            navMenu.classList.add('active');
             menuOpen = true;
         } else {
             menuBtn.classList.remove('open');
-            navMenu.classList.remove('active')
+            navMenu.classList.remove('active');
+            menuOpen = false;
+        }
+    })
+
+    navMenu.addEventListener('click', (e) => {
+        if (e.target.tagName === "A") {
+            menuBtn.classList.remove('open');
+            navMenu.classList.remove('active');
             menuOpen = false;
         }
     })
