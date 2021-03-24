@@ -6,6 +6,7 @@ ul,
 h1, 
 h2, 
 h3,
+h4,
 p,
 a,
 button {
@@ -98,6 +99,6 @@ h4 {
     font-family: $titleFont;
     @include fluid-type-font(2rem, 2.5rem);
     text-transform: uppercase;
-    border-bottom: 10px solid $softGold;
-    line-height: 8px;
+    border-bottom: 3px solid $gold;
+    margin-bottom: 1.8%;
 }

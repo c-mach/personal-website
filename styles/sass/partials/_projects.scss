@@ -11,15 +11,20 @@
 
 .project-container {
     display: flex;
+    padding: 5% 0;
+    border-bottom: 2px solid $lightGrey;
     
     .project-image {
         width: 40%;
-        background-color: $softGold;
     }
 
     .project-text {
         width: 60%;
-        padding: 2%;
+        padding: 0 2% 2% 2%;
+    }
+
+    h4 {
+        margin-bottom: 1.8%;
     }
 
     p {
@@ -32,7 +37,7 @@
 
         a:hover {
             color: $gold;
-            border-bottom: 2px solid $softGold;
+            border-bottom: 2px solid $lightGrey;
         }
     }
 
