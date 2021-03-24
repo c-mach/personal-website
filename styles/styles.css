@@ -865,7 +865,7 @@ header .down-arrow a:hover, header .down-arrow a:focus {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
 }
 
 .project-container {
