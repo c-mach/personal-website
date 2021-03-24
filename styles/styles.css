@@ -876,39 +876,11 @@ header .down-arrow a:hover, header .down-arrow a:focus {
 
 .project-container .project-image {
   width: 40%;
-  outline: 1px solid pink;
 }
 
 .project-container .project-text {
   width: 60%;
   padding: 2%;
-  outline: 1px solid green;
-}
-
-.project-container h4 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  border-bottom: 10px solid rgba(223, 122, 7, 0.2);
-  line-height: 8px;
-}
-
-.project-container h4 {
-  font-size: 2rem;
-}
-
-@media screen and (min-width: 30rem) {
-  .project-container h4 {
-    font-size: calc(2rem + 0.5 * ((100vw - 30rem) / 130));
-  }
-}
-
-@media screen and (min-width: 160rem) {
-  .project-container h4 {
-    font-size: 2.5rem;
-  }
 }
 
 .project-container p {
@@ -916,5 +888,15 @@ header .down-arrow a:hover, header .down-arrow a:focus {
 }
 
 .project-container p:nth-of-type(1), .project-container p:nth-of-type(3) {
+  font-weight: 800;
+}
+
+.project-container p a:hover {
+  color: #df7a07;
+  border-bottom: 2px solid rgba(223, 122, 7, 0.2);
+}
+
+.project-container span {
+  color: #df7a07;
   font-weight: 800;
 }

@@ -14,18 +14,11 @@
     
     .project-image {
         width: 40%;
-        outline: 1px solid pink;
     }
 
     .project-text {
         width: 60%;
         padding: 2%;
-        outline: 1px solid green;
-
-    }
-
-    h4 {
-        @include highlights;
     }
 
     p {
@@ -35,9 +28,15 @@
         &:nth-of-type(3){
             font-weight: 800;
         }
+
+        a:hover {
+            color: $gold;
+            border-bottom: 2px solid rgba(rgb(223, 122, 7), 0.2);
+        }
     }
 
     span {
         color: $gold;
+        font-weight: 800;
     }
 }
