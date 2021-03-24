@@ -98,6 +98,6 @@ h4 {
     font-family: $titleFont;
     @include fluid-type-font(2rem, 2.5rem);
     text-transform: uppercase;
-    border-bottom: 10px solid rgba(rgb(223, 122, 7), 0.2);
+    border-bottom: 10px solid $softGold;
     line-height: 8px;
 }
