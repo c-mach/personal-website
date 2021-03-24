@@ -748,8 +748,8 @@ header .down-arrow a:hover, header .down-arrow a:focus {
 .skills-container {
   background-color: #fdfdff;
   border-radius: 4px;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 30px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 30px 0 rgba(0, 0, 0, 0.19);
   padding: 4% 8%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -955,6 +955,7 @@ header .down-arrow a:hover, header .down-arrow a:focus {
   -webkit-transition: opacity 0.25s ease;
   transition: opacity 0.25s ease;
   overflow: hidden;
+  padding: 5%;
 }
 
 .image-overlay:hover {
