@@ -12,6 +12,10 @@
     display: flex;
     padding: 8% 0;
     border-bottom: 1px solid $lightGrey;
+
+    &:last-child {
+        border-bottom: none;
+    }
     
     .project-image {
         position: relative;
@@ -93,4 +97,9 @@
         font-weight: 400;
         text-align: center;
     }
+
+    i {
+        color: $gold;
+    }
+
 }

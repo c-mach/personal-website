@@ -887,6 +887,10 @@ header .down-arrow a:hover, header .down-arrow a:focus {
   border-bottom: 1px solid #e0e0e0;
 }
 
+.project-container:last-child {
+  border-bottom: none;
+}
+
 .project-container .project-image {
   position: relative;
   width: 40%;
@@ -982,4 +986,8 @@ header .down-arrow a:hover, header .down-arrow a:focus {
   color: white;
   font-weight: 400;
   text-align: center;
+}
+
+.image-overlay i {
+  color: #df7a07;
 }
