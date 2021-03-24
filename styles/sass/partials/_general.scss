@@ -61,15 +61,16 @@ h3 {
     font-family: $titleFont;
     color: $gold;
     text-transform: uppercase;
-    font-weight: 400;
 }
 
 h1 {
     @include fluid-type-font(4rem, 6rem);
+    font-weight: 600;
 }
 
 h2 {
     @include fluid-type-font(3rem, 4.5rem);
+    font-weight: 500;
 }
 
 h3 {
@@ -101,4 +102,8 @@ h4 {
     text-transform: uppercase;
     border-bottom: 3px solid $gold;
     margin-bottom: 1.8%;
+}
+
+p {
+    line-height: 1.5;
 }

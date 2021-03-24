@@ -254,7 +254,7 @@ html {
 }
 
 body {
-  font-family: "Karla", sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #393d3f;
   background-color: #fdfdff;
 }
@@ -300,7 +300,10 @@ h3 {
   font-family: "Montserrat", sans-serif;
   color: #df7a07;
   text-transform: uppercase;
-  font-weight: 400;
+}
+
+h1 {
+  font-weight: 600;
 }
 
 h1 {
@@ -317,6 +320,10 @@ h1 {
   h1 {
     font-size: 6rem;
   }
+}
+
+h2 {
+  font-weight: 500;
 }
 
 h2 {
@@ -400,6 +407,10 @@ h4 {
   h4 {
     font-size: 2.5rem;
   }
+}
+
+p {
+  line-height: 1.5;
 }
 
 header {
@@ -866,14 +877,13 @@ header .down-arrow a:hover, header .down-arrow a:focus {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin-bottom: 5%;
 }
 
 .project-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 5% 0;
+  padding: 8% 0;
   border-bottom: 2px solid #e0e0e0;
 }
 
@@ -883,7 +893,7 @@ header .down-arrow a:hover, header .down-arrow a:focus {
 
 .project-container .project-text {
   width: 60%;
-  padding: 0 2% 2% 2%;
+  padding: 0 2% 0 2%;
 }
 
 .project-container h4 {
@@ -896,6 +906,10 @@ header .down-arrow a:hover, header .down-arrow a:focus {
 
 .project-container p:nth-of-type(1), .project-container p:nth-of-type(3) {
   font-weight: 800;
+}
+
+.project-container p.stacks {
+  margin-bottom: 0;
 }
 
 .project-container p a:hover {
