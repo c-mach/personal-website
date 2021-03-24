@@ -11,10 +11,12 @@
 .project-container {
     display: flex;
     padding: 8% 0;
-    border-bottom: 2px solid $lightGrey;
+    border-bottom: 1px solid $lightGrey;
     
     .project-image {
+        position: relative;
         width: 40%;
+        height: fit-content;
     }
 
     .project-text {
@@ -47,5 +49,48 @@
     span {
         color: $gold;
         font-weight: 800;
+    }
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    overflow: hidden;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    & > * {
+        transform: translateY(100%);
+        transition: transform 0.25s ease;
+    }
+
+    &:hover > * {
+        transform: translateY(0)
+    }
+    
+    .image-title {
+        font-family: $titleFont;
+        color: $gold;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    p {
+        color: white;
+        font-weight: 400;
+        text-align: center;
     }
 }
