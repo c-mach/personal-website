@@ -255,6 +255,7 @@ html {
 body {
   font-family: "Karla", sans-serif;
   color: #393d3f;
+  background-color: #fdfdff;
 }
 
 body {
@@ -703,7 +704,7 @@ header .down-arrow a:hover, header .down-arrow a:focus {
 
 .skills {
   background-color: #e0e0e0;
-  padding: 10% 0;
+  padding: 5% 0;
 }
 
 .skills-container {

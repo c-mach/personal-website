@@ -32,6 +32,7 @@ body {
     font-family: $bodyFont;
     @include fluid-type-font(1.6rem, 2rem);
     color: $textBlack;
+    background-color: $offWhite;
 }
 
 .wrapper {
