@@ -13,20 +13,13 @@
     padding: 8% 0;
     border-bottom: 1px solid $lightGrey;
 
-    &:nth-child(3) {            
-        .project-text {
-            display: flex;
-            flex-direction: column;
-        }
-
-        h4 {
-            align-self: flex-end;
-        }
-
-        p {
-            text-align: right;
-        }
+    @include landscape-tablet {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+
+
 
     &:last-child {
         border-bottom: none;
@@ -36,11 +29,21 @@
         position: relative;
         width: 40%;
         height: fit-content;
+
+        @include landscape-tablet {
+            width: 80%;
+        }
     }
 
     .project-text {
         width: 60%;
         padding: 0 2% 0 2%;
+
+        @include landscape-tablet {
+            width: 80%;
+            padding: 0;
+            margin-top: 2%;
+        }
     }
 
     h4 {
@@ -74,6 +77,33 @@
     span {
         color: $gold;
         font-weight: 800;
+    }
+}
+
+.project-container:nth-child(2n + 1) {            
+    .project-text {
+        display: flex;
+        flex-direction: column;
+        
+        @include landscape-tablet {
+            order: 1;
+        }
+    }
+
+    h4 {
+        align-self: flex-end;
+
+        @include landscape-tablet {
+            align-self: flex-start;
+        }
+    }
+
+    p {
+        text-align: right;
+        
+        @include landscape-tablet {
+            text-align: left;
+        }
     }
 }
 

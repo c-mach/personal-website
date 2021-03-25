@@ -35,12 +35,21 @@ body {
     @include fluid-type-font(1.5rem, 2rem);
     color: $textBlack;
     background-color: $offWhite;
+    overflow-x: hidden;
 }
 
 .wrapper {
     width: 75%;
     max-width: 1200px;
     margin: 0 auto;
+
+    @include small-desktop {
+        width: 85%;
+    }
+
+    @include portrait-tablet {
+        width: 90%;
+    }
 }
 
 img {

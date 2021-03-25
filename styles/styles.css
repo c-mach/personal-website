@@ -258,6 +258,7 @@ body {
   font-family: "Raleway", sans-serif;
   color: #393d3f;
   background-color: #fdfdff;
+  overflow-x: hidden;
 }
 
 body {
@@ -280,6 +281,18 @@ body {
   width: 75%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 940px) {
+  .wrapper {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .wrapper {
+    width: 90%;
+  }
 }
 
 img {
@@ -700,10 +713,38 @@ header .down-arrow a:hover, header .down-arrow a:focus {
   display: flex;
 }
 
+@media screen and (max-width: 600px) {
+  .about-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .about-container .about-image {
   min-width: 300px;
   width: calc(40% - 15px);
   margin-right: 15px;
+}
+
+@media screen and (max-width: 780px) {
+  .about-container .about-image {
+    min-width: auto;
+  }
+  .about-container .about-image img {
+    width: 200px;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 50%;
+  }
 }
 
 .about-container .about-text {
@@ -723,6 +764,13 @@ header .down-arrow a:hover, header .down-arrow a:focus {
 
 .about-container .about-text p:nth-child(3) {
   padding: 0 5%;
+}
+
+@media screen and (max-width: 600px) {
+  .about-container .about-text {
+    width: 100%;
+    margin-top: 2%;
+  }
 }
 
 .about-container .button {
@@ -916,23 +964,19 @@ header .down-arrow a:hover, header .down-arrow a:focus {
   border-bottom: 1px solid #e0e0e0;
 }
 
-.project-container:nth-child(3) .project-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.project-container:nth-child(3) h4 {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
-
-.project-container:nth-child(3) p {
-  text-align: right;
+@media screen and (max-width: 600px) {
+  .project-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .project-container:last-child {
@@ -947,9 +991,23 @@ header .down-arrow a:hover, header .down-arrow a:focus {
   height: fit-content;
 }
 
+@media screen and (max-width: 600px) {
+  .project-container .project-image {
+    width: 80%;
+  }
+}
+
 .project-container .project-text {
   width: 60%;
   padding: 0 2% 0 2%;
+}
+
+@media screen and (max-width: 600px) {
+  .project-container .project-text {
+    width: 80%;
+    padding: 0;
+    margin-top: 2%;
+  }
 }
 
 .project-container h4 {
@@ -982,6 +1040,46 @@ header .down-arrow a:hover, header .down-arrow a:focus {
 .project-container span {
   color: #df7a07;
   font-weight: 800;
+}
+
+.project-container:nth-child(2n + 1) .project-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+  .project-container:nth-child(2n + 1) .project-text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+.project-container:nth-child(2n + 1) h4 {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+@media screen and (max-width: 600px) {
+  .project-container:nth-child(2n + 1) h4 {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+
+.project-container:nth-child(2n + 1) p {
+  text-align: right;
+}
+
+@media screen and (max-width: 600px) {
+  .project-container:nth-child(2n + 1) p {
+    text-align: left;
+  }
 }
 
 .image-overlay {
@@ -1066,6 +1164,24 @@ header .down-arrow a:hover, header .down-arrow a:focus {
 
 .contact-message h3 {
   margin: 0 auto 4% auto;
+}
+
+@media screen and (max-width: 780px) {
+  .contact-message h3 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 780px) and (min-width: 30rem) {
+  .contact-message h3 {
+    font-size: calc(2.5rem + 0.5 * ((100vw - 30rem) / 130));
+  }
+}
+
+@media screen and (max-width: 780px) and (min-width: 160rem) {
+  .contact-message h3 {
+    font-size: 3rem;
+  }
 }
 
 .contact-message a {

@@ -5,10 +5,27 @@
 .about-container {
     display: flex;
 
+    @include landscape-tablet {
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
     .about-image {
         min-width: 300px;
         width: calc(40% - 15px);
         margin-right: 15px;
+
+        @include portrait-tablet {
+            min-width: auto;
+            
+            img {
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
     }
 
     .about-text {
@@ -22,6 +39,11 @@
             &:nth-child(3) {
                 padding: 0 5%;
             }
+        }
+
+        @include landscape-tablet {
+            width: 100%;
+            margin-top: 2%;
         }
     }
 

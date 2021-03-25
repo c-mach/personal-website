@@ -20,3 +20,21 @@
     }
   }
 }
+
+@mixin small-desktop {
+  @media screen and (max-width: 940px) {
+    @content;
+  }
+}
+
+@mixin portrait-tablet {
+  @media screen and (max-width: 780px) {
+    @content;
+  }
+}
+
+@mixin landscape-tablet {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}
