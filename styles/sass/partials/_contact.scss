@@ -30,10 +30,11 @@
         @include fluid-type-font(4.5rem, 5.5rem);
         padding: 3% 5%;
         color: $textBlack;
-        transition: color 0.3s ease;
+        transition: all 0.3s ease;
 
         &:hover {
             color: $gold;
+            transform: scale(1.2)
         }
     }
 

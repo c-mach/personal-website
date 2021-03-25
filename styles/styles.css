@@ -251,6 +251,7 @@ a {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -1049,8 +1050,8 @@ header .down-arrow a:hover, header .down-arrow a:focus {
 .social-icons i {
   padding: 3% 5%;
   color: #393d3f;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .social-icons i {
@@ -1071,6 +1072,8 @@ header .down-arrow a:hover, header .down-arrow a:focus {
 
 .social-icons i:hover {
   color: #df7a07;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .form-container {
@@ -1209,4 +1212,33 @@ footer {
   text-transform: uppercase;
   font-size: 1.4rem;
   padding: 0.8%;
+}
+
+#scrollToTopBtn {
+  background-color: #df7a07;
+  border: none;
+  border-radius: 50%;
+  color: #393d3f;
+  cursor: pointer;
+  font-size: 1.6rem;
+  line-height: 48px;
+  width: 48px;
+}
+
+.scrollToTopBtn {
+  position: fixed;
+  bottom: 5%;
+  right: 2%;
+  z-index: 100;
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.showBtn {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }

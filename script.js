@@ -9,6 +9,8 @@ myApp.toggleMenu = function () {
             menuBtn.classList.add('open');
             navMenu.classList.add('active');
             menuOpen = true;
+
+            scrollToTopBtn.classList.remove('showBtn')
         } else {
             menuBtn.classList.remove('open');
             navMenu.classList.remove('active');
@@ -73,6 +75,31 @@ myApp.typingText = function () {
     const wait = txtElement.getAttribute('data-wait');
     new TypeWriter(txtElement, words, wait);
 }
+
+const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+const rootEl = document.documentElement;
+
+
+myApp.scrollToTop = function () {
+    rootEl.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    })
+}
+
+scrollToTopBtn.addEventListener('click', myApp.scrollToTop);
+
+myApp.handleScroll = function () {
+    const scrollTotal = rootEl.scrollHeight - rootEl.clientHeight;
+    if ((rootEl.scrollTop / scrollTotal) > 0.20) {
+        scrollToTopBtn.classList.add('showBtn')
+    } else {
+        scrollToTopBtn.classList.remove('showBtn')
+    }
+}
+
+document.addEventListener('scroll', myApp.handleScroll);
+
 
 // Init App
 myApp.init = function () {
