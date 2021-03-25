@@ -260,12 +260,12 @@ body {
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 @media screen and (min-width: 30rem) {
   body {
-    font-size: calc(1.6rem + 0.4 * ((100vw - 30rem) / 130));
+    font-size: calc(1.5rem + 0.5 * ((100vw - 30rem) / 130));
   }
 }
 
@@ -758,7 +758,6 @@ header .down-arrow a:hover, header .down-arrow a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 2px solid #e0e0e0;
 }
 
 .skills-container h3 {
@@ -810,22 +809,6 @@ header .down-arrow a:hover, header .down-arrow a:focus {
   }
 }
 
-.skills-icons li .fas {
-  font-size: 4.2rem;
-}
-
-@media screen and (min-width: 30rem) {
-  .skills-icons li .fas {
-    font-size: calc(4.2rem + 1 * ((100vw - 30rem) / 130));
-  }
-}
-
-@media screen and (min-width: 160rem) {
-  .skills-icons li .fas {
-    font-size: 5.2rem;
-  }
-}
-
 .skills-icons li p {
   font-weight: 800;
   text-transform: uppercase;
@@ -845,6 +828,35 @@ header .down-arrow a:hover, header .down-arrow a:focus {
   .skills-icons li p {
     font-size: 1.6rem;
   }
+}
+
+.skills-icons li:nth-of-type(11) i,
+.skills-icons li:nth-of-type(12) i,
+.skills-icons li:nth-of-type(13) i,
+.skills-icons li:nth-of-type(14) i {
+  font-size: 4.2rem;
+}
+
+@media screen and (min-width: 30rem) {
+  .skills-icons li:nth-of-type(11) i,
+  .skills-icons li:nth-of-type(12) i,
+  .skills-icons li:nth-of-type(13) i,
+  .skills-icons li:nth-of-type(14) i {
+    font-size: calc(4.2rem + 1 * ((100vw - 30rem) / 130));
+  }
+}
+
+@media screen and (min-width: 160rem) {
+  .skills-icons li:nth-of-type(11) i,
+  .skills-icons li:nth-of-type(12) i,
+  .skills-icons li:nth-of-type(13) i,
+  .skills-icons li:nth-of-type(14) i {
+    font-size: 5.2rem;
+  }
+}
+
+.skills-icons li:nth-of-type(15) p {
+  line-height: 1.2;
 }
 
 .skills-icons li:nth-of-type(15) i {

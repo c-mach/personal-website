@@ -10,7 +10,6 @@
     padding: 4% 8%;
     display: flex;
     flex-direction: column;
-    border: 2px solid $lightGrey;
 
     h3 {
         align-self: center;
@@ -38,18 +37,28 @@
             padding: 3% 0;
         }
 
-        .fas {
-            @include fluid-type-font(4.2rem, 5.2rem);
-        }
-
         p {
             font-weight: 800;
             @include fluid-type-font(1.4rem, 1.6rem);
             text-transform: uppercase;
         }
     }
+
+    li:nth-of-type(11),
+    li:nth-of-type(12),
+    li:nth-of-type(13),
+    li:nth-of-type(14) {
+        i {
+            @include fluid-type-font(4.2rem, 5.2rem);
+        }
+    }
     
     li:nth-of-type(15) {
+
+        p {
+            line-height: 1.2;
+        }
+
         i {
             @include fluid-type-font(3rem, 3.5rem);
         }  

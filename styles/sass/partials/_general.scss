@@ -31,7 +31,7 @@ html {
 
 body {
     font-family: $bodyFont;
-    @include fluid-type-font(1.6rem, 2rem);
+    @include fluid-type-font(1.5rem, 2rem);
     color: $textBlack;
     background-color: $offWhite;
 }
