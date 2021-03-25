@@ -25,16 +25,31 @@
         }
     }
 
-    a.button {
+    .button {
     padding: 5px 20px;
     width: fit-content;
     align-self: center;
     border: 2px solid $gold;
     text-transform: uppercase;
+    position: relative;
+    top: 0;
+    right: 0;
+    box-shadow: 3px 3px $gold;
+    transition: all 0.4s ease;
+    background-color: $offWhite;
+    font-size: 1.5rem;
 
-        &:hover,
-        &:focus {
+        &:hover {
             background-color: $gold;
+            color: white;
         }
+
+        &:active,
+        &:focus {
+            top: 4px;
+            right: -4px;
+            box-shadow: 2px 2px $gold;
+        }
+
     }
 }

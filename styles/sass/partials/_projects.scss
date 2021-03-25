@@ -13,6 +13,21 @@
     padding: 8% 0;
     border-bottom: 1px solid $lightGrey;
 
+    &:nth-child(3) {            
+        .project-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h4 {
+            align-self: flex-end;
+        }
+
+        p {
+            text-align: right;
+        }
+    }
+
     &:last-child {
         border-bottom: none;
     }

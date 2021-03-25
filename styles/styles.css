@@ -725,7 +725,7 @@ header .down-arrow a:hover, header .down-arrow a:focus {
   padding: 0 5%;
 }
 
-.about-container a.button {
+.about-container .button {
   padding: 5px 20px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -735,10 +735,27 @@ header .down-arrow a:hover, header .down-arrow a:focus {
       align-self: center;
   border: 2px solid #df7a07;
   text-transform: uppercase;
+  position: relative;
+  top: 0;
+  right: 0;
+  -webkit-box-shadow: 3px 3px #df7a07;
+          box-shadow: 3px 3px #df7a07;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  background-color: #fdfdff;
+  font-size: 1.5rem;
 }
 
-.about-container a.button:hover, .about-container a.button:focus {
+.about-container .button:hover {
   background-color: #df7a07;
+  color: white;
+}
+
+.about-container .button:active, .about-container .button:focus {
+  top: 4px;
+  right: -4px;
+  -webkit-box-shadow: 2px 2px #df7a07;
+          box-shadow: 2px 2px #df7a07;
 }
 
 .skills {
@@ -749,8 +766,6 @@ header .down-arrow a:hover, header .down-arrow a:focus {
 .skills-container {
   background-color: #fdfdff;
   border-radius: 4px;
-  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 30px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 30px 0 rgba(0, 0, 0, 0.19);
   padding: 4% 8%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -899,6 +914,25 @@ header .down-arrow a:hover, header .down-arrow a:focus {
   display: flex;
   padding: 8% 0;
   border-bottom: 1px solid #e0e0e0;
+}
+
+.project-container:nth-child(3) .project-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.project-container:nth-child(3) h4 {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.project-container:nth-child(3) p {
+  text-align: right;
 }
 
 .project-container:last-child {
@@ -1226,14 +1260,14 @@ footer {
 
 #scrollToTopBtn:hover {
   border: none;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
   border: 2px solid transparent;
 }
 
 .scrollToTopBtn {
   position: fixed;
-  bottom: 5%;
-  right: 2%;
+  bottom: 50px;
+  right: 3.5%;
   z-index: 100;
   opacity: 0;
   -webkit-transform: translateY(100px);

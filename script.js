@@ -79,7 +79,6 @@ myApp.typingText = function () {
 const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 const rootEl = document.documentElement;
 
-
 myApp.scrollToTop = function () {
     rootEl.scrollTo({
         top: 0,
@@ -91,6 +90,7 @@ scrollToTopBtn.addEventListener('click', myApp.scrollToTop);
 
 myApp.handleScroll = function () {
     const scrollTotal = rootEl.scrollHeight - rootEl.clientHeight;
+    const scrollMax = rootEl.scrollTopMax;
     if ((rootEl.scrollTop / scrollTotal) > 0.20) {
         scrollToTopBtn.classList.add('showBtn')
     } else {
