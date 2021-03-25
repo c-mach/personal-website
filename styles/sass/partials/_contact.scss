@@ -1,16 +1,30 @@
 .contact {
     background-color: $lightGrey;
     padding: 5% 0;
+
+    @include mobile {
+        padding: 5%;
+    }
 }
 
 .contact-container {
     display: flex;
+
+    @include small-tablet {
+        flex-direction: column;
+    }
 }
 
 .contact-message {
     border-right: 2px solid $offWhite;
     padding-right: 5%;
     width: 55%;
+
+    @include small-tablet {
+        border-right: none;
+        padding-right: 0;
+        width: 100%;
+    }
 
     h3 {
         margin: 0 auto 4% auto;
@@ -47,6 +61,11 @@
 .form-container {
     padding-left: 5%;
     width: 45%;
+
+    @include small-tablet {
+        padding: 0;
+        width: 100%;
+    }
 }
 
 form {

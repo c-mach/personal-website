@@ -33,8 +33,20 @@
   }
 }
 
-@mixin landscape-tablet {
+@mixin tablet {
+  @media screen and (max-width: 670px) {
+    @content;
+  }
+}
+
+@mixin small-tablet {
   @media screen and (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: 470px) {
     @content;
   }
 }

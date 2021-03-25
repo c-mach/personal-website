@@ -295,6 +295,12 @@ body {
   }
 }
 
+@media screen and (max-width: 470px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -321,12 +327,12 @@ h1 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 @media screen and (min-width: 30rem) {
   h1 {
-    font-size: calc(4rem + 2 * ((100vw - 30rem) / 130));
+    font-size: calc(3.5rem + 2.5 * ((100vw - 30rem) / 130));
   }
 }
 
@@ -341,12 +347,12 @@ h2 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 @media screen and (min-width: 30rem) {
   h2 {
-    font-size: calc(3rem + 1.5 * ((100vw - 30rem) / 130));
+    font-size: calc(2.5rem + 2 * ((100vw - 30rem) / 130));
   }
 }
 
@@ -454,6 +460,12 @@ header .menu-btn {
   overflow: hidden;
 }
 
+@media screen and (max-width: 470px) {
+  header .menu-btn {
+    top: 1%;
+  }
+}
+
 header .menu-btn.open .menu-toggle {
   -webkit-transform: translateX(-50px);
           transform: translateX(-50px);
@@ -491,6 +503,14 @@ header .menu-toggle::after {
   background: #df7a07;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 470px) {
+  header .menu-toggle,
+  header .menu-toggle::before,
+  header .menu-toggle::after {
+    width: 40px;
+  }
 }
 
 header .menu-toggle::before {
@@ -713,7 +733,7 @@ header .down-arrow a:hover, header .down-arrow a:focus {
   display: flex;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 670px) {
   .about-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -734,9 +754,10 @@ header .down-arrow a:hover, header .down-arrow a:focus {
   margin-right: 15px;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 670px) {
   .about-container .about-image {
     min-width: auto;
+    width: 100%;
   }
   .about-container .about-image img {
     width: 200px;
@@ -744,6 +765,7 @@ header .down-arrow a:hover, header .down-arrow a:focus {
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 50%;
+    margin: 0 auto;
   }
 }
 
@@ -766,7 +788,7 @@ header .down-arrow a:hover, header .down-arrow a:focus {
   padding: 0 5%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 670px) {
   .about-container .about-text {
     width: 100%;
     margin-top: 2%;
@@ -811,6 +833,12 @@ header .down-arrow a:hover, header .down-arrow a:focus {
   padding: 5% 0;
 }
 
+@media screen and (max-width: 470px) {
+  .skills {
+    background-color: #fdfdff;
+  }
+}
+
 .skills-container {
   background-color: #fdfdff;
   border-radius: 4px;
@@ -844,8 +872,10 @@ header .down-arrow a:hover, header .down-arrow a:focus {
 
 .skills-icons li {
   text-align: center;
-  width: 130px;
-  height: 100px;
+  width: 15%;
+  height: 10%;
+  min-width: 100px;
+  min-height: 70px;
   margin: 1.5%;
 }
 
@@ -1150,16 +1180,39 @@ header .down-arrow a:hover, header .down-arrow a:focus {
   padding: 5% 0;
 }
 
+@media screen and (max-width: 470px) {
+  .contact {
+    padding: 5%;
+  }
+}
+
 .contact-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+@media screen and (max-width: 600px) {
+  .contact-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .contact-message {
   border-right: 2px solid #fdfdff;
   padding-right: 5%;
   width: 55%;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-message {
+    border-right: none;
+    padding-right: 0;
+    width: 100%;
+  }
 }
 
 .contact-message h3 {
@@ -1229,6 +1282,13 @@ header .down-arrow a:hover, header .down-arrow a:focus {
 .form-container {
   padding-left: 5%;
   width: 45%;
+}
+
+@media screen and (max-width: 600px) {
+  .form-container {
+    padding: 0;
+    width: 100%;
+  }
 }
 
 form {

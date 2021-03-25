@@ -16,6 +16,10 @@ header {
         transition: all 0.5s ease-in-out;
         overflow: hidden;
 
+        @include mobile {
+            top: 1%;
+        }
+
         &.open .menu-toggle {
             transform: translateX(-50px);
             background: transparent;
@@ -48,6 +52,14 @@ header {
         height: 6px;
         background: $gold;
         transition: all 0.5s ease-in-out;
+    }
+
+    @include mobile {
+        .menu-toggle,
+        .menu-toggle::before,
+        .menu-toggle::after {
+            width: 40px;
+        }
     }
 
     .menu-toggle::before {

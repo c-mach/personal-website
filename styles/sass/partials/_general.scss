@@ -50,6 +50,10 @@ body {
     @include portrait-tablet {
         width: 90%;
     }
+
+    @include mobile {
+        width: 100%;
+    }
 }
 
 img {
@@ -74,12 +78,12 @@ h3 {
 }
 
 h1 {
-    @include fluid-type-font(4rem, 6rem);
+    @include fluid-type-font(3.5rem, 6rem);
     font-weight: 600;
 }
 
 h2 {
-    @include fluid-type-font(3rem, 4.5rem);
+    @include fluid-type-font(2.5rem, 4.5rem);
     font-weight: 500;
 }
 
