@@ -110,19 +110,19 @@ textarea {
 
 button[type=submit] {
     border: none;
-    background-color: $textBlack;
-    color: $offWhite;
+    background-color: $offWhite;
+    color: $gold;
     width: 60%;
     padding: 2% 0 1% 0;
     align-self: center;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1.4rem;
-    border: 1px solid $textBlack;
+    border: 2px solid $gold;
     position: relative;
     top: 0;
     right: 0;
-    box-shadow: 3px 3px $textBlack;
+    box-shadow: 3px 3px $gold;
     transition: background-color 0.4s ease;
     transition: color 0.4s ease;
 
@@ -130,11 +130,11 @@ button[type=submit] {
     &:focus {
         top: 4px;
         right: -4px;
-        box-shadow: 2px 2px $textBlack;
+        box-shadow: 2px 2px $gold;
     }
 
     &:hover {
-        color: $textBlack;
-        background-color: $offWhite;
+        color: $offWhite;
+        background-color: $gold;
     }
 }

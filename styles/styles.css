@@ -252,13 +252,13 @@ a {
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Raleway", sans-serif;
   color: #393d3f;
   background-color: #fdfdff;
-  overflow-x: hidden;
 }
 
 body {
@@ -457,7 +457,7 @@ header .menu-btn {
   cursor: pointer;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 @media screen and (max-width: 470px) {
@@ -1381,8 +1381,8 @@ textarea {
 
 button[type=submit] {
   border: none;
-  background-color: #393d3f;
-  color: #fdfdff;
+  background-color: #fdfdff;
+  color: #df7a07;
   width: 60%;
   padding: 2% 0 1% 0;
   -ms-flex-item-align: center;
@@ -1391,12 +1391,12 @@ button[type=submit] {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1.4rem;
-  border: 1px solid #393d3f;
+  border: 2px solid #df7a07;
   position: relative;
   top: 0;
   right: 0;
-  -webkit-box-shadow: 3px 3px #393d3f;
-          box-shadow: 3px 3px #393d3f;
+  -webkit-box-shadow: 3px 3px #df7a07;
+          box-shadow: 3px 3px #df7a07;
   -webkit-transition: background-color 0.4s ease;
   transition: background-color 0.4s ease;
   -webkit-transition: color 0.4s ease;
@@ -1406,13 +1406,13 @@ button[type=submit] {
 button[type=submit]:active, button[type=submit]:focus {
   top: 4px;
   right: -4px;
-  -webkit-box-shadow: 2px 2px #393d3f;
-          box-shadow: 2px 2px #393d3f;
+  -webkit-box-shadow: 2px 2px #df7a07;
+          box-shadow: 2px 2px #df7a07;
 }
 
 button[type=submit]:hover {
-  color: #393d3f;
-  background-color: #fdfdff;
+  color: #fdfdff;
+  background-color: #df7a07;
 }
 
 footer {
@@ -1432,6 +1432,7 @@ footer {
   font-size: 1.6rem;
   line-height: 35px;
   width: 40px;
+  overflow: hidden;
 }
 
 #scrollToTopBtn:hover {
@@ -1443,7 +1444,7 @@ footer {
 .scrollToTopBtn {
   position: fixed;
   bottom: 50px;
-  right: 3.5%;
+  right: 20px;
   z-index: 100;
   opacity: 0;
   -webkit-transform: translateY(100px);

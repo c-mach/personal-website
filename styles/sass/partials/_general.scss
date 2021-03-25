@@ -28,6 +28,7 @@ a {
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -35,7 +36,6 @@ body {
     @include fluid-type-font(1.5rem, 2rem);
     color: $textBlack;
     background-color: $offWhite;
-    overflow-x: hidden;
 }
 
 .wrapper {

@@ -15,6 +15,7 @@ footer {
     font-size: 1.6rem;
     line-height: 35px;
     width: 40px;
+    overflow: hidden;
 
         &:hover {
         border: none;
@@ -26,7 +27,7 @@ footer {
 .scrollToTopBtn {
     position: fixed;
     bottom: 50px;
-    right: 3.5%;
+    right: 20px;
     z-index: 100;
     opacity: 0;
     transform: translateY(100px);
