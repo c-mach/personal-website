@@ -44,9 +44,15 @@
             margin-bottom: 0;
         }
 
+        a {
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 1.4rem;
+        }
+
         a:hover {
             color: $gold;
-            border-bottom: 2px solid $lightGrey;
+            border-bottom: 2px solid $gold;
         }
     }
 

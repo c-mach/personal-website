@@ -933,9 +933,15 @@ header .down-arrow a:hover, header .down-arrow a:focus {
   margin-bottom: 0;
 }
 
+.project-container p a {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
 .project-container p a:hover {
   color: #df7a07;
-  border-bottom: 2px solid #e0e0e0;
+  border-bottom: 2px solid #df7a07;
 }
 
 .project-container span {
@@ -1021,20 +1027,50 @@ header .down-arrow a:hover, header .down-arrow a:focus {
   border-right: 2px solid #fdfdff;
   padding-right: 5%;
   width: 55%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .contact-message h3 {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin-bottom: 4%;
+  margin: 0 auto 4% auto;
+}
+
+.contact-message a {
+  margin: 0 auto;
+}
+
+.social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 5% 10%;
+}
+
+.social-icons i {
+  padding: 3% 5%;
+  color: #393d3f;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.social-icons i {
+  font-size: 4.5rem;
+}
+
+@media screen and (min-width: 30rem) {
+  .social-icons i {
+    font-size: calc(4.5rem + 1 * ((100vw - 30rem) / 130));
+  }
+}
+
+@media screen and (min-width: 160rem) {
+  .social-icons i {
+    font-size: 5.5rem;
+  }
+}
+
+.social-icons i:hover {
+  color: #df7a07;
 }
 
 .form-container {
