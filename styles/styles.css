@@ -758,6 +758,7 @@ header .down-arrow a:hover, header .down-arrow a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border: 2px solid #e0e0e0;
 }
 
 .skills-container h3 {
@@ -991,4 +992,164 @@ header .down-arrow a:hover, header .down-arrow a:focus {
 
 .image-overlay i {
   color: #df7a07;
+}
+
+.contact {
+  background-color: #e0e0e0;
+  padding: 5% 0;
+}
+
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-message {
+  border-right: 2px solid #fdfdff;
+  padding-right: 5%;
+  width: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-message h3 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 4%;
+}
+
+.form-container {
+  padding-left: 5%;
+  width: 45%;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+input,
+textarea {
+  outline: none;
+  padding: 2%;
+  width: 100%;
+  margin-bottom: 2%;
+  border: 1px solid #e0e0e0;
+  color: #393d3f;
+  background-color: #fdfdff;
+  letter-spacing: 0.8px;
+}
+
+input,
+textarea {
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 30rem) {
+  input,
+  textarea {
+    font-size: calc(1.4rem + 0.1 * ((100vw - 30rem) / 130));
+  }
+}
+
+@media screen and (min-width: 160rem) {
+  input,
+  textarea {
+    font-size: 1.5rem;
+  }
+}
+
+input:active, input:focus,
+textarea:active,
+textarea:focus {
+  border: 1.5px solid #df7a07;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #393d3f;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #393d3f;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  color: #393d3f;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #393d3f;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+input:required, input:required:focus, input:required:hover,
+textarea:required,
+textarea:required:focus,
+textarea:required:hover {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+textarea {
+  resize: none;
+}
+
+button[type=submit] {
+  border: none;
+  background-color: #393d3f;
+  color: #fdfdff;
+  width: 60%;
+  padding: 2% 0 1% 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.4rem;
+  border: 1px solid #393d3f;
+  position: relative;
+  top: 0;
+  right: 0;
+  -webkit-box-shadow: 3px 3px #393d3f;
+          box-shadow: 3px 3px #393d3f;
+  -webkit-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
+  -webkit-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+}
+
+button[type=submit]:active, button[type=submit]:focus {
+  top: 4px;
+  right: -4px;
+  -webkit-box-shadow: 2px 2px #393d3f;
+          box-shadow: 2px 2px #393d3f;
+}
+
+button[type=submit]:hover {
+  color: #393d3f;
+  background-color: #fdfdff;
 }

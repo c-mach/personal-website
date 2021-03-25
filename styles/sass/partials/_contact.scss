@@ -1,0 +1,97 @@
+.contact {
+    background-color: $lightGrey;
+    padding: 5% 0;
+}
+
+.contact-container {
+    display: flex;
+}
+
+.contact-message {
+    border-right: 2px solid $offWhite;
+    padding-right: 5%;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        align-self: center;
+        margin-bottom: 4%;
+    }
+}
+
+.form-container {
+    padding-left: 5%;
+    width: 45%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    outline: none;
+    padding: 2%;
+    width: 100%;
+    margin-bottom: 2%;
+    border: 1px solid $lightGrey;
+    color: $textBlack;
+    background-color: $offWhite;
+    @include fluid-type-font(1.4rem, 1.5rem);
+    letter-spacing: 0.8px;
+
+    &:active,
+    &:focus {
+        border: 1.5px solid $gold;
+    }
+
+    &::placeholder {
+        color: $textBlack;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+    }
+
+    &:required,
+    &:required:focus,
+    &:required:hover {
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+textarea {
+    resize: none;
+}
+
+button[type=submit] {
+    border: none;
+    background-color: $textBlack;
+    color: $offWhite;
+    width: 60%;
+    padding: 2% 0 1% 0;
+    align-self: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.4rem;
+    border: 1px solid $textBlack;
+    position: relative;
+    top: 0;
+    right: 0;
+    box-shadow: 3px 3px $textBlack;
+    transition: background-color 0.4s ease;
+    transition: color 0.4s ease;
+
+    &:active,
+    &:focus {
+        top: 4px;
+        right: -4px;
+        box-shadow: 2px 2px $textBlack;
+    }
+
+    &:hover {
+        color: $textBlack;
+        background-color: $offWhite;
+    }
+}
