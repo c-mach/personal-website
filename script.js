@@ -1,5 +1,6 @@
 const myApp = {};
 
+
 myApp.toggleMenu = function () {
     const menuBtn = document.querySelector('.menu-btn');
     const navMenu = document.querySelector('.nav-container');
