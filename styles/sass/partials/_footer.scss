@@ -42,4 +42,8 @@ footer {
 .showBtn {
     opacity: 1;
     transform: translateY(0);
+
+    @include mobile {
+        opacity: 0;
+    }
 }
