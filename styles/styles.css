@@ -797,13 +797,13 @@ header .down-arrow a:hover, header .down-arrow a:focus {
 }
 
 .about-container .about-text p {
-  padding-bottom: 5%;
+  padding-bottom: 3%;
 }
 
 @media screen and (max-width: 670px) {
   .about-container .about-text {
     width: 100%;
-    margin-top: 2%;
+    margin-top: 3%;
   }
 }
 
