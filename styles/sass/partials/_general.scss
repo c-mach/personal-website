@@ -71,6 +71,11 @@ a {
     &:hover {
         color: white;
     }
+
+    &:active,
+    &:focus {
+        outline: 1px solid $gold;
+    }
 }  
 
 h1, 
